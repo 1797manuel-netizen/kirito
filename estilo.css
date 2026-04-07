@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Share+Tech+Mono&family=Titillium+Web:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Titillium+Web:wght@300;600&display=swap');
 
 * {
     margin: 0;
@@ -7,165 +7,136 @@
 }
 
 body {
-    background-color: #05070a;
-    background-image: 
-        linear-gradient(rgba(10, 15, 25, 0.8) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(10, 15, 25, 0.8) 1px, transparent 1px);
-    background-size: 30px 30px; /* Sutil malla de fondo tipo ingeniería */
-    color: #e0e6ed;
     font-family: 'Titillium Web', sans-serif;
-    padding: 40px;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
-/* Navegación con Estilo de Cabecera de Datos */
+/* NAV */
 nav {
-    border: 2px solid #00f2ff;
-    background: rgba(0, 242, 255, 0.03);
-    padding: 30px;
-    margin-bottom: 50px;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 98% 100%, 0 100%);
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3b82f6;
 }
 
 nav h1 {
     font-family: 'Syncopate', sans-serif;
-    font-size: 1.6rem;
-    color: #00f2ff;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #2563eb;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
-    margin-top: 15px;
 }
 
 nav ul li {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.8rem;
-    color: #64748b;
-    border-right: 1px solid #334155;
-    padding-right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+    transition: 0.3s;
 }
 
-/* Tabla Estilo Módulo de Hardware */
+nav ul li:hover {
+    color: #2563eb;
+    cursor: pointer;
+}
+
+/* TABLA */
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px 0;
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Encabezados */
+/* ENCABEZADOS */
 th {
     padding: 15px;
-    text-align: left;
+    background: #e2e8f0;
 }
 
 th a {
-    color: #00f2ff;
+    color: #2563eb;
     text-decoration: none;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1.1rem;
-    display: block;
-    border-bottom: 1px solid #00f2ff;
-    padding-bottom: 5px;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 th a:hover {
-    background: rgba(0, 242, 255, 0.1);
-    padding-left: 10px;
+    text-decoration: underline;
 }
 
-/* Celdas (Contenedores de Información) */
+/* CELDAS */
 td {
-    background: #0d121a;
-    border: 1px solid #1e293b;
-    padding: 25px;
+    padding: 15px;
     vertical-align: top;
-    position: relative;
+    border: 1px solid #e2e8f0;
+}
+
+/* IMÁGENES */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-/* El efecto "Border Glow" al pasar el ratón */
-td:hover {
-    border-color: #00f2ff;
-    box-shadow: inset 0 0 15px rgba(0, 242, 255, 0.1);
+img:hover {
+    transform: scale(1.05);
 }
 
-/* Pequeño adorno en la esquina de cada celda */
-td::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    width: 10px;
-    height: 10px;
-    background: #00f2ff;
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
-
-/* Imágenes */
-img {
-    display: block;
-    margin-bottom: 20px;
-    border: 1px solid #334155;
-    filter: brightness(0.8) contrast(1.2);
-    width: 100%; /* Ajusta la imagen al ancho de la celda */
-    height: auto;
-}
-
-td:hover img {
-    filter: brightness(1);
-    border-color: #00f2ff;
-}
-
-/* Tipografía Interna */
+/* TEXTOS */
 h3 {
-    font-family: 'Share Tech Mono', monospace;
-    color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    background: #1e293b;
-    padding: 5px 10px;
+    color: #2563eb;
+    margin-bottom: 8px;
 }
 
 h4 {
-    color: #00f2ff;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    color: #1e293b;
+    margin-bottom: 5px;
 }
 
 h5 {
-    font-weight: 600;
-    color: #94a3b8;
+    color: #475569;
     margin-bottom: 10px;
 }
 
+/* LISTAS */
 ul {
-    list-style: none;
+    padding-left: 18px;
 }
 
 ul li {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    margin-bottom: 8px;
-    padding-left: 15px;
-    border-left: 2px solid #334155;
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 
-td:hover ul li {
-    border-left-color: #00f2ff;
+/* HOVER SUAVE */
+td:hover {
+    background: #f1f5f9;
+    transition: 0.3s;
 }
 
-/* Scrollbar Personalizada */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-thumb {
-    background: #00f2ff;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    table, tr, td, th {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    td {
+        margin-bottom: 20px;
+    }
 }
